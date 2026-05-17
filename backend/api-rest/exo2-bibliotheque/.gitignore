@@ -1,0 +1,8 @@
+# Dépendances — trop lourd à envoyer
+node_modules/
+
+# Variables sensibles — jamais sur GitHub !
+.env
+
+# Fichiers Mac inutiles
+.DS_Store
