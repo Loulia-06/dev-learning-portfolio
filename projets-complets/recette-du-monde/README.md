@@ -53,7 +53,10 @@ mais toujours via l'API — la séparation en trois couches n'était pas
 
 ---
 ## 🖼️ Captures d'écran
-<!-- Optionnel — ajoute tes captures ici : ![description](screenshots/nom.png) -->
+![Page d'accueil](screenshots/accueil.png)
+![Page connexion](screenshots/connexion.png)
+![Créer une recette](screenshots/creation-recette.png)
+![Détails d'une recette](screenshots/details-recette.png)
 
 ## 🎥 Démo vidéo
 <!-- Optionnel — colle ton lien YouTube non-listé ici : https://youtube.com/watch?v=XXXXX -->
