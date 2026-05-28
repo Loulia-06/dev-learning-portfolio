@@ -141,8 +141,7 @@ ORDER BY ca_total DESC;
 ---
 
 ## 🖼️ Captures d'écran
-<!-- ![Schéma MCD](screenshots/mcd.png) -->
-<!-- ![pgAdmin tables](screenshots/pgadmin.png) -->
+![Modèle Conceptuel des Données](screenshots/model conceptuel des données(location).pdf)
 
 ---
 
