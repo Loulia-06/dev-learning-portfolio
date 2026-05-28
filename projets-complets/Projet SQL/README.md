@@ -139,4 +139,9 @@ ORDER BY ca_total DESC;
 
 ---
 
+## 🖼️ Captures d'écran
+![Modèle Conceptuel des Données](screenshots/mcd.pdf)
+
+---
+
 *Projet réalisé dans le cadre du module SQL B2 — Formation informatique*
