@@ -137,9 +137,10 @@ Comprendre comment les données circulent dans une architecture MVC sans en avoi
 ---
 
 ## 🖼️ Captures d'écran
-<!-- ![Page d'accueil](screenshots/accueil.png) -->
-<!-- ![Panier](screenshots/panier.png) -->
-<!-- ![Espace admin](screenshots/admin.png) -->
+![Page d'accueil](screenshots/accueil.png)
+![Liste des articles](screenshots/articles.png)
+![Filtres articles](screenshots/articles-filtres.png)
+![Panier](screenshots/panier.png)
 
 ---
 
