@@ -141,7 +141,7 @@ ORDER BY ca_total DESC;
 ---
 
 ## 🖼️ Captures d'écran
-![Modèle Conceptuel des Données](screenshots/model conceptuel des données(location).pdf)
+![Modèle Conceptuel des Données](screenshots/mcd.pdf)
 
 ---
 
