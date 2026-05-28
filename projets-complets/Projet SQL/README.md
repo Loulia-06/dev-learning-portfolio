@@ -30,26 +30,24 @@ La base de données gère : la flotte de véhicules, les stations et bornes de r
 
 Concevoir une base de données relationnelle de A à Z en partant d'un besoin métier réel. J'ai appris à modéliser avec Merise avant d'écrire une seule ligne de SQL, ce qui m'a aidée à structurer ma pensée. Les triggers et fonctions PostgreSQL m'ont montré qu'une base de données peut contenir de la logique métier, pas seulement des données.
 
+C'était mon premier projet SQL — et aussi mes premiers pas sur GitHub. La structure du repo et la documentation n'étaient pas encore mes points forts à l'époque. Aujourd'hui je sais ce que j'aurais fait différemment : des commits plus réguliers, un README dès le début, et une organisation des dossiers pensée dès le départ.
+
 ---
 
 ## 🗂️ Structure du projet
 
 ```
 projet-sql-ciara-mobility/
-├── create_tables.sql     → structure de la base + données test
-├── queries.sql           → 10+ requêtes documentées
-├── data/                 → fichiers CSV pour l'import
-│   ├── station.csv
-│   ├── type_vehicule.csv
-│   ├── client.csv
-│   ├── technicien.csv
-│   ├── vehicule.csv
-│   ├── borne_recharge.csv
-│   ├── reservation.csv
-│   ├── location.csv
-│   ├── paiement.csv
-│   └── maintenance.csv
-└── README.md
+├── documents/
+│   └── docs/
+│       ├── Dictionnaire_de_données.pdf     → dictionnaire complet des attributs
+│       ├── MLD.pdf                         → Modèle Logique de Données
+│       ├── liste(entités,attributs...).pdf  → liste des entités et attributs
+│       └── model conceptuel des données.pdf → MCD (Modèle Conceptuel)
+├── sql/
+│   ├── create_tables.sql                   → structure de la base + données test
+│   ├── queries.sql                         → 10+ requêtes documentées
+│   └── README.md
 ```
 
 ---
@@ -74,7 +72,7 @@ station ──────────── vehicule ──────── t
 
 | Partie | Repo | Description |
 |--------|------|-------------|
-| Base de données | [projet_SQL_b2](https://github.com/Loulia-06/projet_SQL_b2) | Scripts SQL + données CSV |
+| Base de données | [projet_SQL_b2](https://github.com/Loulia-06/projet_SQL_b2) | Scripts SQL + documentation |
 
 ---
 
@@ -88,12 +86,12 @@ station ──────────── vehicule ──────── t
 
 ```sql
 -- 1. Créer la base dans pgAdmin
--- 2. Ouvrir Query Tool → exécuter create_tables.sql
+-- 2. Ouvrir Query Tool → exécuter sql/create_tables.sql
 -- 3. Importer les CSV dans cet ordre :
 --    station → type_vehicule → client → technicien
 --    → vehicule → borne_recharge → reservation
 --    → location → paiement → maintenance
--- 4. Tester avec queries.sql
+-- 4. Tester avec sql/queries.sql
 ```
 
 ---
@@ -126,6 +124,7 @@ ORDER BY ca_total DESC;
 |-------|------|
 | PostgreSQL | SGBD relationnel |
 | pgAdmin 4 | Interface graphique |
+| drawDB | Modélisation visuelle du schéma relationnel |
 | GitHub | Gestion de versions |
 
 ---
@@ -137,11 +136,6 @@ ORDER BY ca_total DESC;
 | Violation de clé étrangère à l'import | Mauvais ordre d'import CSV | Respecter l'ordre défini ci-dessus |
 | `null value in column` | Colonne NOT NULL sans valeur | Vérifier les données CSV |
 | Trigger ne se déclenche pas | Mauvaise syntaxe PL/pgSQL | Relire la doc PostgreSQL |
-
----
-
-## 🖼️ Captures d'écran
-![Modèle Conceptuel des Données](screenshots/mcd.pdf)
 
 ---
 
