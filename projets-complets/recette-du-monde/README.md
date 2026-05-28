@@ -1,4 +1,4 @@
-# 🍽️ RecetteDuMonde — API REST complète
+# 🍽️ Recette du Monde — API REST complète
 > Projet individuel de fin de module — API REST avec authentification et interface
 > Réalisé le 20/05/2026
 
